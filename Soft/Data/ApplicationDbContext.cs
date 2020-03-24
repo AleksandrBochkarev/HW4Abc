@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Facade.Quantity;
 
 namespace Soft.Data
 {
@@ -12,5 +13,6 @@ namespace Soft.Data
             : base(options)
         {
         }
+        public DbSet<Facade.Quantity.MeasureView> MeasureView { get; set; }
     }
 }
