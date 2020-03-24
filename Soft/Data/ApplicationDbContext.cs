@@ -13,6 +13,12 @@ namespace Soft.Data
             : base(options)
         {
         }
-        public DbSet<Facade.Quantity.MeasureView> MeasureView { get; set; }
+        public DbSet<Facade.Quantity.MeasureView> Measures { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.Entity<MeasureView>().ToTable("Measure");
+        }
     }
 }

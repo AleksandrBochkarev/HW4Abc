@@ -36,7 +36,7 @@ namespace Soft
                 return Page();
             }
 
-            _context.MeasureView.Add(MeasureView);
+            _context.Measures.Add(MeasureView);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
