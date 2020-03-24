@@ -21,4 +21,9 @@
     <ProjectReference Include="..\Pages\Pages.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Areas\Quantity\Pages\" />
+  </ItemGroup>
+
 </Project>
