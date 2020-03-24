@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{8B8BE6E3-FBB4-44DE-AC0A-44B85B80BA8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pages", "Pages\Pages.csproj", "{6A08A1E8-BAD4-41C0-8C94-C6B037595A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soft", "Soft\Soft.csproj", "{2A1C6E3B-2835-4AE4-8CC4-EDA339C88B6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{8B8BE6E3-FBB4-44DE-AC0A-44B85B80BA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B8BE6E3-FBB4-44DE-AC0A-44B85B80BA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B8BE6E3-FBB4-44DE-AC0A-44B85B80BA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A08A1E8-BAD4-41C0-8C94-C6B037595A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A08A1E8-BAD4-41C0-8C94-C6B037595A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A08A1E8-BAD4-41C0-8C94-C6B037595A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A08A1E8-BAD4-41C0-8C94-C6B037595A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1C6E3B-2835-4AE4-8CC4-EDA339C88B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1C6E3B-2835-4AE4-8CC4-EDA339C88B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1C6E3B-2835-4AE4-8CC4-EDA339C88B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1C6E3B-2835-4AE4-8CC4-EDA339C88B6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
