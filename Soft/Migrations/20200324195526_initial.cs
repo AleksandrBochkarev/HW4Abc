@@ -47,7 +47,7 @@ namespace Soft.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "MeasureView",
+                name: "Measure",
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
@@ -59,7 +59,7 @@ namespace Soft.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MeasureView", x => x.Id);
+                    table.PrimaryKey("PK_Measure", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -226,7 +226,7 @@ namespace Soft.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "MeasureView");
+                name: "Measure");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
