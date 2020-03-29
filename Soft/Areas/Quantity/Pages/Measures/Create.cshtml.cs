@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Abc.Domain.Quantity;
 using Facade.Quantity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -7,17 +8,13 @@ namespace Soft.Areas.Quantity.Pages.Measures
 {
     public class CreateModel : PageModel
     {
-        private readonly Soft.Data.ApplicationDbContext _context;
+        private readonly IMeasuresRepository data;
 
-        public CreateModel(Soft.Data.ApplicationDbContext context)
-        {
-            _context = context;
-        }
+        public CreateModel(IMeasuresRepository r) => data = r;
+        
 
-        public IActionResult OnGet()
-        {
-            return Page();
-        }
+        public IActionResult OnGet() => Page();
+        
 
         [BindProperty]
         public MeasureView MeasureView { get; set; }
@@ -26,13 +23,9 @@ namespace Soft.Areas.Quantity.Pages.Measures
         // more details see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
-            _context.Measures.Add(MeasureView);
-            await _context.SaveChangesAsync();
+            if (!ModelState.IsValid) return Page();
+            
+            await data.Add(MeasureViewFactory.Create(MeasureView));
 
             return RedirectToPage("./Index");
         }
