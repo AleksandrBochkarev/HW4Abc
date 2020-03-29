@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using Facade.Quantity;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Facade.Quantity;
-using Soft.Data;
 
-namespace Soft
+namespace Soft.Areas.Quantity.Pages.Measures
 {
     public class IndexModel : PageModel
     {

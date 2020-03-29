@@ -1,8 +1,11 @@
 ﻿using System;
 
-public class PeriodData
+namespace Abc.Data.Common
 {
-    public DateTime? ValidFrom { get; set; }
+    public class PeriodData
+    {
+        public DateTime? ValidFrom { get; set; }
 
-    public DateTime? ValidTo { get; set; }
+        public DateTime? ValidTo { get; set; }
+    }
 }

@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Facade.Quantity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Facade.Quantity;
-using Soft.Data;
 
-namespace Soft
+namespace Soft.Areas.Quantity.Pages.Measures
 {
     public class CreateModel : PageModel
     {

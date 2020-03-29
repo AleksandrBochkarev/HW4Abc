@@ -1,5 +1,8 @@
-﻿public class UniqueEntityData: PeriodData
+﻿namespace Abc.Data.Common
 {
-    public string Id { get; set; }
+    public class UniqueEntityData: PeriodData
+    {
+        public string Id { get; set; }
 
+    }
 }
