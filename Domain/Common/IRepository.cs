@@ -11,6 +11,7 @@ namespace Abc.Domain.Common
         Task<T> Get(string id);
         Task Delete(string id);
         Task Update(T obj);
+        Task Add(T obj);
 
 
 
