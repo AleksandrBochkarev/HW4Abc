@@ -1,5 +1,4 @@
-﻿using System;
-using Abc.Data.Quantity;
+﻿using Abc.Data.Quantity;
 using Abc.Domain.Quantity;
 
 namespace Facade.Quantity
