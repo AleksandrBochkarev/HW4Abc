@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Abc.Data.Quantity;
+﻿using Abc.Data.Quantity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Abc.Infra.Quantity
@@ -21,7 +18,7 @@ namespace Abc.Infra.Quantity
                 InitializeTables(builder);
             }
 
-            protected static void InitializeTables(ModelBuilder builder)
+            public static void InitializeTables(ModelBuilder builder)
             {
                 builder.Entity<MeasureData>().ToTable(nameof(Measures));
         }
