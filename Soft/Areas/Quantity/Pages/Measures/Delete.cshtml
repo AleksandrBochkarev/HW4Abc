@@ -13,11 +13,11 @@
     <h4>MeasureView</h4>
     <hr />
     <dl class="row">
-    @Html.EditControlsFor(model => model.Item.Code);
-    @Html.EditControlsFor(model => model.Item.Name);
-    @Html.EditControlsFor(model => model.Item.Definition);
-    @Html.EditControlsFor(model => model.Item.ValidFrom);
-    @Html.EditControlsFor(model => model.Item.ValidTo);
+    @Html.EditControlsFor(model => model.Item.Code)
+    @Html.EditControlsFor(model => model.Item.Name)
+    @Html.EditControlsFor(model => model.Item.Definition)
+    @Html.EditControlsFor(model => model.Item.ValidFrom)
+    @Html.EditControlsFor(model => model.Item.ValidTo)
     </dl>
         <form method="post">
             <input type="hidden" asp-for="Item.Id" />
